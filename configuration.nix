@@ -22,5 +22,9 @@
 
   programs.firefox.enable = true;
 
+  environment.shellAliases = {
+    opencode = "/home/sofiavldd/.opencode/bin/opencode";
+  };
+
   system.stateVersion = "25.11";
 }

@@ -7,21 +7,12 @@
     viAlias = true;
     vimAlias = true;
     configure = {
-      customRC = ''
-
-        let mapleader = "\<Space>"
-
-        lua << EOF
-          ${builtins.readFile /home/sofiavldd/.config/nvim/init.lua}
-
-          ${builtins.readFile /home/sofiavldd/.config/nvim/lua/config/lazy.lua}
-
-          ${builtins.readFile /home/sofiavldd/.config/nvim/lua/config/keymaps.lua}
-
-          ${builtins.readFile /home/sofiavldd/.config/nvim/lua/config/autocmds.lua}
-        EOF
-
+      customLuaRC = ''
+        dofile(vim.fn.stdpath("config") .. "/init.lua")
       '';
+      packages.myVimPackage = with pkgs.vimPlugins; {
+        start = [ lazy-nvim ];
+      };
     };
   };
 }

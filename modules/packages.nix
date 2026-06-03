@@ -10,8 +10,6 @@
     wget
     curl
     fzf
-    vimPlugins.nvim-cmp
-    vimPlugins.LazyVim
     gcc
     gnumake
     cmake

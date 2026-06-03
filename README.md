@@ -25,8 +25,6 @@ I mostly code in C, Rust and C++, focusing in embedded systems and robotics, so 
 
 Module layout: `modules/` splits into `system/`, `services/`, `programs/`, `users/`, `packages.nix`, `fonts.nix`.
 
->NOTE
-> For some reason my neovim configs are kinda cooked and the plugings are not being install. For sure its skill issue mine. I hope to figure this out in the future.
 ## AI disclaimer
 
 I am still very much learning to deal with the Nix package manager and the language, and I have used Agentic AI in this process.

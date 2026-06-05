@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  # Enable the COSMIC login manager
+  services.displayManager.cosmic-greeter.enable = true;
+
+  # Enable the COSMIC desktop environment
+  services.desktopManager.cosmic.enable = true;
 }

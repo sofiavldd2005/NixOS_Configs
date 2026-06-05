@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     alacritty
+    discord
     git
     spotify
     oh-my-zsh
@@ -25,7 +26,9 @@
     imagemagick
     lua5_1
     ripgrep
+    zellij
     fd
     wl-clipboard
+    stm32cubemx
   ];
 }
